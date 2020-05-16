@@ -788,7 +788,7 @@ td, th {
   bottom: 0;
 }
 
-.container.fullwidth {
+..fullwidth {
   align-items: center;
   width: 100%;
 }
@@ -2452,8 +2452,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*-------- Start Banner Area ------------*/
 .banner-area {
-  background: #f9f9ff;
-  aspect-ratio: 100%;
+  background-color: rgb(207, 217, 235);
+  height: 100vh;
 }
 
 .banner-area .fullscreen {
