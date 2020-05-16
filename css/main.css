@@ -107,6 +107,7 @@ ol, ul {
 }
 .services-area{
   background: #a7b7c9b2;
+  margin: 10px;
 }
 
 select {
@@ -2460,10 +2461,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   align-content: center;
   justify-content: center;
   position: -webkit-sticky;
+  margin: 10px;
+  shape-margin: 1cm;
 }
 
 .banner-area .fullscreen {
-  height:auto;
+  height:100%;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -2519,6 +2522,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*-------- End Banner Area ------------*/
 /*-------- Start home-about Area ------------*/
+
 @media (max-width: 767px) {
   .home-about-right {
     margin-top: 30px;
@@ -4341,6 +4345,8 @@ dl.accordion.time-line:before {
 /* =================================== */
 .footer-area {
   background-color: #04091e;
+  margin: 10px;
+
 }
 
 .single-footer-widget h4 {
