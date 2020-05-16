@@ -5987,6 +5987,9 @@ button.bg-dark:focus {
 
 .align-items-center {
   align-items: center !important;
+  align-content: center;
+  justify-content: center;
+  
 }
 
 .align-items-baseline {
