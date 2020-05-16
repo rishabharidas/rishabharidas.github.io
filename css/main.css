@@ -92,7 +92,7 @@ $black			: #222;
 }
 
 body {
-  color: #777777;
+  background-color: whitesmoke;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -4345,7 +4345,9 @@ dl.accordion.time-line:before {
 /* =================================== */
 .footer-area {
   background-color: #04091e;
-  margin: 10px;
+margin-top: 10px;
+margin-left: 10px;
+margin-right: 10px;
 
 }
 
