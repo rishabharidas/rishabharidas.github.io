@@ -107,7 +107,8 @@ ol, ul {
 }
 .services-area{
   background: #a7b7c9b2;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 select {
@@ -2461,7 +2462,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   align-content: center;
   justify-content: center;
   position: -webkit-sticky;
-  margin: 10px;
+  margin-bottom: 10px;
   shape-margin: 1cm;
 }
 
@@ -4346,8 +4347,7 @@ dl.accordion.time-line:before {
 .footer-area {
   background-color: #04091e;
 margin-top: 10px;
-margin-left: 10px;
-margin-right: 10px;
+
 
 }
 
