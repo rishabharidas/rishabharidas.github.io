@@ -2454,6 +2454,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-area {
   background-color: rgb(207, 217, 235);
   height: 100vh;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .banner-area .fullscreen {
