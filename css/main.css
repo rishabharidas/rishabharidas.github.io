@@ -164,7 +164,10 @@ img {
   margin-bottom: 10px;
   height: 50vh;
   display: flex;
-  height: 100%;
+
+}
+.about{
+	height: 100%;
 }
 
 @media (max-width: 767px) {
