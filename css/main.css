@@ -24,7 +24,7 @@ body.border-dark .menu-btn > .lines > span{
 .menu{
 	position:absolute;
 	z-index:399;
-	background:rgba(0,0,0,.9);
+	background:rgba(0, 0, 0, 0.219);
 	top:0;
 	right:0;
 	height:100%;
