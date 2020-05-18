@@ -53,7 +53,7 @@ img {
 	display: inline-block;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-weight: bold;
-	font-size: xx-large;
+	font-size: 60px;
 	text-align: left;
 }
 
@@ -141,6 +141,7 @@ img {
 
 	.profile__info h1 {
 		font-size: 60px;
+		text-align: left;
 	}
 
 	.profile__intro {
