@@ -156,12 +156,10 @@ img {
 /* ------About sctiom --------- */
 
 .about{
-  border-top: 60px;
-  line-height: 1.6;
+
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 10px;
   margin-bottom: 10px;
   height: 50vh;
   display: flex;
