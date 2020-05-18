@@ -62,7 +62,7 @@ body.border-dark .menu-btn > .lines > span{
 }
 .menu-items > li > a{
 	color:#FFF;
-	color:rgba(255,255,255,.6);
+	color:rgb(255, 255, 255);
 	font-size:18px;
 	font-weight:700;
 	text-decoration:none;
@@ -76,7 +76,7 @@ body.border-dark .menu-btn > .lines > span{
 	transition:color .3s cubic-bezier(.785,.135,.15,.86);
 }
 .menu-items > li > a:hover{
-	color:#FFF;
+	color:rgb(0, 140, 255);
 }
 .main-content > .page-border{
 	position:absolute;
