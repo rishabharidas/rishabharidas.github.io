@@ -1,6 +1,6 @@
 # rishabharidas.github.io
 About Me
 
-Website Created with HTML, CSS , JS
+Website Created with HTML, CSS
 
 About section
