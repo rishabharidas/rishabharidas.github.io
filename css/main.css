@@ -57,7 +57,7 @@ img {
 	text-align: left;
 }
 
-.profile__info h1::after {
+.profile__info h4::after {
 	content: '';
 	position: absolute;
 	height: 3px;
@@ -156,14 +156,12 @@ img {
 /* ------About sctiom --------- */
 
 .about{
-
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 10px;
   height: 50vh;
   display: flex;
-
 }
 .about{
 	height: 70%;
@@ -171,7 +169,6 @@ img {
 
 @media (max-width: 767px) {
 	.about {
-	  margin-top: 30px;
 	  display: flex;
 	  align-items: center;
 	}
@@ -199,9 +196,6 @@ img {
 	max-width: 445px;
   }
   
-  .about{
-	box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.3);
-  }
 
 
   /* ----Services Area----- */
