@@ -216,6 +216,9 @@ img {
 	background: linear-gradient(90deg, rgba(112, 219, 233, 0.78), rgba(75, 144, 235, 0.85))
 	
 }
+.services{
+	height: 100%;
+}
 .services h2{
 	margin-bottom: 10px;
 	align-items: center;
