@@ -139,21 +139,18 @@ body.border-dark .main-content > .page-border{
 }
 
 
-.first {
+body {
 	line-height: 1.6;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-family: 'Source Code Pro', monospace;
-	background: linear-gradient(90deg, rgba(84, 150, 255, .78), rgba(135, 57, 229, .85)),
-				url(hero.jpg) center bottom;
+	background: linear-gradient(90deg, rgba(84, 150, 255, .78), rgba(135, 57, 229, .85)), url(hero.jpg) center bottom;			
 	background-size: cover;
 	color: #fff;
-	height: 100vh;
-}
-.first{
 	height: 100%;
 }
+
 
 /*Profile*/
 
