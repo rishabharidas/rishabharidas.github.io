@@ -193,8 +193,17 @@ border-radius:50%;
 .services-area{
     background-color: rgba(139,106,232,0.91);
 }
+.services-area h1{
+    margin: 40px;
+    text-transform: capitalize;
+    text-shadow: black;
+    font-size:40px;
+    
+
+}
 
 .team-boxed{
+    margin-top: 40px;
     color:#313437;
     background-color:#eef4f7
 }
@@ -260,3 +269,16 @@ border-radius:50%;
     .team-boxed .social a:hover{
         opacity:1}
         .box{border-radius:30px}
+
+.icon-data{
+    -webkit-box-shadow: 11px 18px 33px -1px rgba(0,0,0,0.52);
+    -moz-box-shadow: 11px 18px 33px -1px rgba(0,0,0,0.52);
+    box-shadow: 11px 18px 33px -1px rgba(0,0,0,0.52);
+}
+
+.icon-data:hover{
+    background: linear-gradient(130deg, #503bff 0%, #8293ff 100%);
+    box-shadow: none;
+    transition: .3s all ease-in-out;
+    
+}
