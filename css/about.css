@@ -191,56 +191,72 @@ border-radius:50%;
 }
 
 .services-area{
-    background-color: #a198f7;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    align-content: center;
+    background-color: rgba(139,106,232,0.91);
 }
 
-.c98 {
-    margin-bottom: 10px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    text-transform: capitalize;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
+.team-boxed{
+    color:#313437;
+    background-color:#eef4f7
 }
-
-
-
-.row1{
-    display: block;
-
+.team-boxed p{
+    color:#7d8285}
+.team-boxed h2{
+    font-weight:700;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:inherit
 }
-.row1:after,.row1:before{display:table;content:""}
-.row1:after{clear:both}
-
-.single-services{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.icon-data{
-    
-    justify-content: center;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(221, 200, 200, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(17, 16, 16, 0.144);
-    border-radius: 30px;
-
-}
-.icon-data:hover{
-    background-color: #8e85e080;
-}
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
+@media (max-width:767px){
+    .team-boxed h2{
+        margin-bottom:25px;
+        padding-top:25px;
+        font-size:24px}
     }
-.box{
-    display: block;
+.team-boxed .intro{
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto}
+.team-boxed .intro p{
+    margin-bottom:0}
+.team-boxed .people{
+    padding:50px 0
 }
+.team-boxed .item{
+    text-align:center
+}
+.team-boxed .item .box{
+    text-align:center;
+    padding:30px;
+    background-color:#fff;
+    margin-bottom:30px
+}
+.team-boxed .item .name{
+    font-weight:700;
+    margin-top:28px;
+    margin-bottom:8px;
+    color:inherit
+}
+.team-boxed .item .title{
+    text-transform:uppercase;
+    font-weight:700;
+    color:#d0d0d0;
+    letter-spacing:2px;font-size:13px}
+.team-boxed .item .description{
+    font-size:15px;
+    margin-top:15px;
+    margin-bottom:20px
+}
+.team-boxed .item img{
+    max-width:160px}
+.team-boxed .social{
+    font-size:18px;
+    color:#a2a8ae
+}
+.team-boxed .social a{
+    color:inherit;
+    margin:0 10px;
+    display:inline-block;
+    opacity:.7}
+    .team-boxed .social a:hover{
+        opacity:1}
+        .box{border-radius:30px}
