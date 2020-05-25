@@ -260,8 +260,9 @@ body.border-dark .main-content > .page-border{
 /* ----Icon theming----- */
 
 .flex-center {
-    display: flex;
-    width: 10px;
+	display: flex;
+	align-items: center;
+    
     padding: 10px;
   }
   
