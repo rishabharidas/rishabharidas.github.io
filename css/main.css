@@ -262,13 +262,18 @@ body.border-dark .main-content > .page-border{
 .flex-center {
     display: flex;
     width: 10px;
-    padding: 10px;
+	padding: 10px;
+	margin-top: -14px;
+	margin-left: -14px;
+	align-content: initial;
+	align-items: left;
+	justify-content: left;
   }
   
   .icon-3d {
-    padding: 10px;
-    -webkit-animation: icon3d 200ms 10;
-    animation: icon3d 200ms 10;
+	padding: 10px;
+	align-items: left;
+	justify-content: left;
     color: #fff;
   }
     .flex-center a:hover {
@@ -276,22 +281,20 @@ body.border-dark .main-content > .page-border{
             animation: icon3d 200ms infinite;
 	}
 	
-	@media screen and (max-width: 991px) {
-		.flex-center{
+@media screen and (max-width: 991px) {
+	.flex-center{
 		justify-items: center;
 		margin-left: 14px;
 		margin-right: 14px;
-		margin-top: -14px;
-		}
+		margin-top: -14px	;
+	}
 	
-		.icon-3d {
+	.icon-3d {
 			
-			justify-content: center;
-			align-items: center;
-			-webkit-animation: icon3d 200ms 10;
-			animation: icon3d 200ms 10;
-			color: #fff;
-		  }
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+	}
 }
   
   
