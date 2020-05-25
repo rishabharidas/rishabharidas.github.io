@@ -267,8 +267,8 @@ body.border-dark .main-content > .page-border{
   
   .icon-3d {
     padding: 10px;
-    -webkit-animation: icon3d 200ms 10;
-    animation: icon3d 200ms 10;
+    /*-webkit-animation: icon3d 200ms 10;*/
+    /*animation: icon3d 200ms 10;*/
     color: #fff;
   }
     .flex-center a:hover {
