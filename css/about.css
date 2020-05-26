@@ -191,20 +191,18 @@ border-radius:50%;
     align-content: center;
 }
 
-.services-area{
-    background-color: rgba(93, 116, 218, 0.76);
-}
+
 .services-area h1{
 	padding-top: 50px;
-    margin: 40px;
     text-transform: capitalize;
-    font-size:40px;
-    
+	font-size:40px;
+	margin-bottom: 40px;
 
 }
 
 .team-boxed{
-    margin-top: 40px;
+	padding-bottom: 60px;
+
     color:#313437;
     background-color:#9cc8df;
 }
