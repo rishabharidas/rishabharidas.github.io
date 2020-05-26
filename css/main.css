@@ -255,7 +255,7 @@ body.border-dark .main-content > .page-border{
 	display:block;
 	width:100%;
 	height:3px;
-	background:#FFF;
+	background:rgba(248, 241, 241, 0.925);
 	-webkit-transition:background 2.5s cubic-bezier(.785,.135,.15,.86);
 	-moz-transition:background 2.5s cubic-bezier(.785,.135,.15,.86);
 	transition:background 2.5s cubic-bezier(.785,.135,.15,.86);
