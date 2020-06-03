@@ -139,7 +139,7 @@ img {
 }
 /*----------- Menu ------------------*/
 body.border-dark .menu-btn > .lines > span{
-	background:#303F9F;
+	background:rgb(255, 255, 255);
 }
 .menu-btn > .lines > .l2{
 	margin:6px 0;
