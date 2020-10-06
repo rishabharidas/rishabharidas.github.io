@@ -7,11 +7,13 @@ html, body {
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .home {
@@ -47,9 +49,13 @@ img {
 	display: inline-block;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 600;
-	position: relative;
+  position: relative;
 }
 
+.profile__info p{
+	display: inline-block;
+  position: relative;
+}
 
 .profile__intro {
 	padding: 1rem 10px 1.5rem;
@@ -57,11 +63,16 @@ img {
 	line-height: 0.5;
 	color: #f1f5ff;
 	font-weight: 600;
-
+  text-align: center;
 }
 
 .profile__intro a {
 	color: #fff;
+}
+
+.profile__contact{
+  display: inline-block;
+  position: relative;
 }
 
 .contact {
@@ -108,9 +119,9 @@ img {
 		width: 900px;
 		margin: 0 auto;
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-direction: row-reverse;
+		/*justify-content: space-between;*/
+    align-items: center;
+		flex-direction: column;
 	}
 
 	.profile__photo {
@@ -120,17 +131,20 @@ img {
 	}
 
 	.profile__info {
-		text-align: left;
-		flex-basis: 70%;
-		width: 70%;
+		text-align: center;
+		flex-basis: 100%;
+    width: 100%;
+    
 	}
 
 	.profile__info h1 {
-		font-size: 50px;
+    font-size: 50px;
+    font-weight: 600;
 	}
 
 	.profile__intro {
-		padding: 1rem 0 1.5rem;
+    padding: 1rem 0 1.5rem;
+    text-align: center;
 	}
 
 	.contact {
@@ -270,14 +284,14 @@ body.border-dark .main-content > .page-border{
 	margin-top: -14px;
 	margin-left: -14px	;
 	align-content: initial;
-	align-items: left;
-	justify-content: left;
+	align-items: center;
+	justify-content: center;
   }
   
   .icon-3d {
 	padding: 10px;
-	align-items: left;
-	justify-content: left;
+	align-items: center;
+	justify-content: center;
     color: #fff;
   }
     .flex-center a:hover {
