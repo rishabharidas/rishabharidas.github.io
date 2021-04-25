@@ -6,10 +6,12 @@
     <link rel="icon" href="img/game.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/852482dc81.js" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body style="background: radial-gradient(farthest-corner at 40px 40px, #000000 0%,#080813 70%);">
+	
 <div style="height: 97vh;"> 
 	<div id="stars"></div>
     <div id="stars2"></div>
@@ -28,8 +30,10 @@
 				<div class='inner' >
 					<ul class='menu-items' >
 						<li>
-							<a href='#' class='section-toggle' data-section='intro' >
-								Home
+							<a>
+								<div class="popup" class="section-toggle" onclick="pfunction()">Home
+								<span class="popuptext" id="myPopup">You are already here</span>
+								</div>
 							</a>
 						</li>
 						<li>

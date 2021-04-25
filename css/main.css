@@ -155,7 +155,13 @@ img {
 body.border-dark .menu-btn > .lines > span{
 	background:rgb(255, 255, 255);
 }
+.menu-btn > .lines > .l1{
+	margin:6px 0;
+}
 .menu-btn > .lines > .l2{
+	margin:6px 0;
+}
+.menu-btn > .lines > .l3{
 	margin:6px 0;
 }
 .menu{
@@ -274,6 +280,63 @@ body.border-dark .main-content > .page-border{
 	-moz-transition:background 2.5s cubic-bezier(.785,.135,.15,.86);
 	transition:background 2.5s cubic-bezier(.785,.135,.15,.86);
 }
+
+/*--------- popup -------*/
+		
+.popup{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.popup .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+}
+
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+  }
+/*--------- popup -------*/
 
 /* ----Icon theming----- */
 
