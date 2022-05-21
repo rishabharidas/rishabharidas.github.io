@@ -4,7 +4,11 @@
     <link rel="icon" href="img/game.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/cube.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="js/script.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="page">
@@ -14,26 +18,39 @@
             It's Rishab Haridas
           </h1>
           <div class="subHeading">
-            <h3><u>#Developer</u> <u>#Dreamer</u> <u>#Weeb</u></h3>
+            <h3>
+              <u>#Developer</u> <a href=""><u>#Dreamer</u></a>
+              <a href=""><u>#Weeb</u></a>
+            </h3>
           </div>
         </div>
       </div>
-      <div class="cube">
+      <div class="moreSection" id="moreSection">
+        <div class="section">
+          <a href="#about"> <img src="img/code.png" href="#about"/></a>
+        </div>
+        <div class="section">
+          <a href="https://www.buymeacoffee.com/rishabharidas" target="_blank"
+            ><img src="img/bmc.png" width="100%" />
+          </a>
+        </div>
+      </div>
+      <div class="cube" onclick="changeAndExpand()" id="cube">
         <div class="frontSide">
           <div class="left">
-            <div class="leftPieceTop"></div>
-            <div class="leftPieceMiddle"></div>
-            <div class="leftPieceBottom"></div>
+            <div class="leftPieceTop" id="leftPieceTop"></div>
+            <div class="leftPieceMiddle" id="leftPieceMiddle"></div>
+            <div class="leftPieceBottom" id="leftPieceBottom"></div>
           </div>
           <div class="middle">
-            <div class="middlePieceTop"></div>
-            <div class="middlePieceMiddle"></div>
-            <div class="middlePieceBottom"></div>
+            <div class="middlePieceTop" id="middlePieceTop"></div>
+            <div class="middlePieceMiddle" id="middlePieceMiddle"></div>
+            <div class="middlePieceBottom" id="middlePieceBottom"></div>
           </div>
           <div class="right">
-            <div class="rightPieceTop"></div>
-            <div class="rightPieceMiddle"></div>
-            <div class="rightPieceBottom"></div>
+            <div class="rightPieceTop" id="rightPieceTop"></div>
+            <div class="rightPieceMiddle" id="rightPieceMiddle"></div>
+            <div class="rightPieceBottom" id="rightPieceBottom"></div>
           </div>
         </div>
       </div>
