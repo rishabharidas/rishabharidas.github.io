@@ -1,0 +1,97 @@
+.cube {
+  height: 80px;
+  width: 80px;
+  padding-right: 6px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.frontSide {
+  display: flex;
+  height: 100%;
+  margin: auto;
+}
+.left {
+  width: 30%;
+  height: 90%;
+}
+.middle {
+  width: 30%;
+  height: 90%;
+}
+.right {
+  width: 30%;
+  height: 90%;
+}
+.rightPieceTop {
+  border-style: solid;
+  border-color: black;
+  background-color: #ffffff;
+  height: 30%;
+  margin: 1px;
+  border-radius: 4px;
+}
+.rightPieceMiddle {
+  border-style: solid;
+  border-color: black;
+  background-color: rgb(14, 205, 16);
+  height: 30%;
+  margin: 1px;
+  border-radius: 4px;
+}
+.rightPieceBottom {
+  border-style: solid;
+  border-color: black;
+  background-color: rgb(0, 79, 255);
+  height: 30%;
+  margin: 1px;
+  border-radius: 4px;
+}
+.middlePieceTop {
+  border-style: solid;
+  border-color: black;
+  background-color: red;
+  height: 30%;
+  margin: 1px;
+  border-radius: 4px;
+}
+.middlePieceMiddle {
+  border-style: solid;
+  border-color: black;
+  background-color: #ffffff;
+  height: 30%;
+  margin: 1px;
+  border-radius: 4px;
+}
+.middlePieceBottom {
+  border-style: solid;
+  border-color: black;
+  background-color: rgb(14, 205, 16);
+  height: 30%;
+  margin: 1px;
+  border-radius: 4px;
+}
+.leftPieceTop {
+  border-style: solid;
+  border-color: black;
+  background-color: orange;
+  height: 30%;
+  margin: 1px;
+  border-radius: 4px;
+}
+.leftPieceMiddle {
+  border-style: solid;
+  border-color: black;
+  background-color: rgb(0, 79, 255);
+  height: 30%;
+  margin: 1px;
+  border-radius: 4px;
+}
+.leftPieceBottom {
+  border-style: solid;
+  border-color: black;
+  background-color: yellow;
+  height: 30%;
+  margin: 1px;
+  border-radius: 4px;
+}
