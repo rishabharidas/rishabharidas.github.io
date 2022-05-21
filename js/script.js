@@ -3,7 +3,6 @@ function random() {
   return Math.floor(Math.random() * 6);
 }
 function changeAndExpand() {
-  console.log("testingFunction");
   let cubeColors = [
     "yellow",
     "rgb(14, 205, 16)",
@@ -39,9 +38,12 @@ function changeAndExpand() {
 
   if (moreMenuOpened) {
     document.getElementById("moreSection").style.display = "none";
+    document.getElementById("arrowPointer").style.display = "block";
+
     moreMenuOpened = !moreMenuOpened;
   } else {
     document.getElementById("moreSection").style.display = "block";
+    document.getElementById("arrowPointer").style.display = "none";
     moreMenuOpened = !moreMenuOpened;
   }
 }
