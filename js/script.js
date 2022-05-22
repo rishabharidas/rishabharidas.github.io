@@ -37,12 +37,12 @@ function changeAndExpand() {
   rightPieceBottom.style.backgroundColor = cubeColors[random()];
 
   if (moreMenuOpened) {
-    document.getElementById("moreSection").style.display = "none";
+    document.getElementById("moreSection").style.height = "0";
     document.getElementById("arrowPointer").style.display = "block";
 
     moreMenuOpened = !moreMenuOpened;
   } else {
-    document.getElementById("moreSection").style.display = "block";
+    document.getElementById("moreSection").style.height = "160px";
     document.getElementById("arrowPointer").style.display = "none";
     moreMenuOpened = !moreMenuOpened;
   }
