@@ -48,6 +48,20 @@ body html {
     font-size: 10px;
   }
 }
+@media (min-width: 150px) {
+  .content {
+    margin: 40px;
+    margin-top: 200px;
+  }
+  .heading > h1 {
+    font-size: 30px;
+  }
+  .subHeading h3 {
+    font-family: "Press Start 2P", cursive;
+    font-size: 10px;
+    line-height: 2;
+  }
+}
 /* moreMenu */
 .moreSection {
   position: absolute;
