@@ -13,7 +13,7 @@
     />
     <script src="js/script.js" type="text/javascript"></script>
   </head>
-  <body>
+  <body style="overflow: hidden">
     <div class="page">
       <span class="star">.</span>
       <span class="star">.</span>
@@ -40,6 +40,15 @@
       <span class="star">.</span>
       <span class="star">.</span>
       <span class="star">.</span>
+      <div id="comet" class="comet">
+        <strong>__</strong>
+      </div>
+      <div id="comet2" class="comet">
+        <strong>__</strong>
+      </div>
+      <div id="comet3" class="comet">
+        <strong>__</strong>
+      </div>
       <div class="content">
         <div class="heading">
           <h1>
@@ -89,12 +98,7 @@
         </div>
       </div>
       <div class="openWindow">
-        <div class="arrowPointer" id="arrowPointer">
-          <img
-            src="https://img.icons8.com/plasticine/100/000000/down--v1.png"
-          />
-        </div>
-        <div class="moreSection" id="moreSection">
+        <div class="moreSection" id="moreSection" onmouseleave="changeAndExpand()">
           <div class="section">
             <a href="#about"> <img src="img/code.png" href="#about"/></a>
           </div>
@@ -105,28 +109,18 @@
           </div>
         </div>
       </div>
-      <div class="cube" onclick="changeAndExpand()" id="cube">
-        <div class="frontSide">
-          <div class="left">
-            <div class="leftPieceTop" id="leftPieceTop"></div>
-            <div class="leftPieceMiddle" id="leftPieceMiddle"></div>
-            <div class="leftPieceBottom" id="leftPieceBottom"></div>
-          </div>
-          <div class="middle">
-            <div class="middlePieceTop" id="middlePieceTop"></div>
-            <div class="middlePieceMiddle" id="middlePieceMiddle"></div>
-            <div class="middlePieceBottom" id="middlePieceBottom"></div>
-          </div>
-          <div class="right">
-            <div class="rightPieceTop" id="rightPieceTop"></div>
-            <div class="rightPieceMiddle" id="rightPieceMiddle"></div>
-            <div class="rightPieceBottom" id="rightPieceBottom"></div>
-          </div>
-        </div>
-        <span class="cubeChallenge" id="cubeChallenge">
-          Try making it the same</span
-        >
-      </div>
+      <div
+      class="cube"
+      onclick="changeAndExpand()"
+      onmouseover=""
+    >
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
     </div>
   </body>
 </html>

@@ -7,6 +7,7 @@ body html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 .page {
   width: 100%;
@@ -69,13 +70,14 @@ body html {
 /* moreMenu */
 .moreSection {
   position: absolute;
-  bottom: 94px;
-  right: 7px;
+  bottom: 145px;
+  right: 20px;
   height: 0;
-  width: 73px;
+  width: 72px;
   background-color: rgb(167 167 167 / 8%);
   border-radius: 16px;
 }
+
 .section {
   width: 90%;
   height: 30%;

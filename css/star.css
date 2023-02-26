@@ -11,12 +11,6 @@
   /* animation: 39s up infinite; */
   animation-delay: 0.2s;
 }
-.star:nth-child(2) {
-  top: 20%;
-  left: 20%;
-  font-size: 16px;
-  animation: 39s up infinite;
-}
 .star:nth-child(3) {
   top: 35%;
   left: 30%;
@@ -157,5 +151,43 @@
   }
   50% {
     transform: translateY(-180px);
+  }
+}
+
+.comet {
+  position: absolute;
+  top: 70%;
+  left: -70px;
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-repeat: no-repeat;
+  animation: none;
+  animation-fill-mode: forwards;
+}
+
+#comet2 {
+  position: absolute;
+  top: 70%;
+  left: -70px;
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-repeat: no-repeat;
+  animation: none;
+  animation-fill-mode: forwards;
+}
+@keyframes comet-fall {
+  0% {
+    left: -70px;
+    top: 70%;
+  }
+  50% {
+    left: -80px;
+    top: 50%;
+  }
+  100% {
+    left: 110%;
+    top: 10%;
   }
 }
