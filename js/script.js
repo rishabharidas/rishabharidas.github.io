@@ -20,6 +20,3 @@ function changeAndExpand() {
     moreMenuOpened = !moreMenuOpened;
   }
 }
-function viewSocials() {
-  document.getElementById("social").style.height = "50px";
-}

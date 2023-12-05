@@ -1,117 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>rishabharidas</title>
-    <link rel="icon" href="img/game.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/cube.css" />
-    <link rel="stylesheet" href="css/star.css" />
-    <meta name="viewport" content="width=device-width" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="js/script.js" type="text/javascript"></script>
-  </head>
-  <body style="overflow: hidden">
-    <div class="page">
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <span class="star">.</span>
-      <div class="content">
-        <div class="heading">
-          <h1>
-            It's Rishab Haridas
-          </h1>
-          <div class="subHeading">
-            <h3>
-              <a href="https://github.com/rishabharidas" target="_blank"
-                ><u>#Developer</u></a
-              >
-              <a onclick="viewSocials()"><u>#Dreamer</u></a>
-              <a href="https://kitsu.io/users/rishabharidas" target="_blank"
-                ><u>#Weeb</u></a
-              >
-            </h3>
-          </div>
-          <div class="social" id="social">
-            <div class="network">
-              <a href="https://instagram.com/rishabharidas" target="_blank"
-                ><img
-                  src="https://img.icons8.com/cotton/128/000000/instagram-new.png"
-                />
-              </a>
-            </div>
-            <div class="network">
-              <a href="https://twitter.com/rishabharidas" target="_blank">
-                <img
-                  src="https://img.icons8.com/cotton/128/000000/twitter.png"
-                />
-              </a>
-            </div>
-            <div class="network">
-              <a href="https://linkedin.com/in/rishabharidas" target="_blank">
-                <img
-                  src="https://img.icons8.com/doodle/48/000000/linkedin-circled.png"
-                />
-              </a>
-            </div>
-            <div class="network">
-              <a href="https://t.me/rishabharidas" target="_blank">
-                <img
-                  class="telegram"
-                  src="https://img.icons8.com/plasticine/100/000000/telegram-app.png"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="openWindow">
-        <div class="moreSection" id="moreSection" onmouseleave="changeAndExpand()">
-          <div class="section">
-            <a href="#about"> <img src="img/code.png" href="#about"/></a>
-          </div>
-          <div class="section">
-            <a href="https://www.buymeacoffee.com/rishabharidas" target="_blank"
-              ><img src="img/bmc.png" width="100%" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-      class="cube"
-      onclick="changeAndExpand()"
-      onmouseover=""
-    >
-      <div class="face front"></div>
-      <div class="face back"></div>
-      <div class="face right"></div>
-      <div class="face left"></div>
-      <div class="face top"></div>
-      <div class="face bottom"></div>
-    </div>
-    </div>
-  </body>
+	<head>
+		<title>rishabharidas</title>
+		<link
+			rel="icon"
+			href="img/game.png"
+			type="image/x-icon"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/main.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/cube.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/star.css"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<script
+			src="js/script.js"
+			type="text/javascript"
+		></script>
+	</head>
+	<body style="overflow: hidden">
+		<div class="page">
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<span class="star">.</span>
+			<div class="content">
+				<div class="heading">
+					<h1>It's Rishab Haridas</h1>
+					<div class="subHeading">
+						<h3>
+							<a
+								href="https://github.com/rishabharidas"
+								target="_blank"
+								><u>#Developer</u></a
+							>
+							<u>#Dreamer</u>
+							<a
+								href="https://kitsu.io/users/rishabharidas"
+								target="_blank"
+								><u>#Weeb</u></a
+							>
+						</h3>
+					</div>
+					<div
+						class="social"
+						id="social"
+					>
+						<div class="network">
+							<a
+								href="https://instagram.com/rishabharidas"
+								target="_blank"
+								><img
+									src="https://img.icons8.com/cotton/128/000000/instagram-new.png"
+								/>
+							</a>
+						</div>
+						<div class="network">
+							<a
+								href="https://twitter.com/rishabharidas"
+								target="_blank"
+							>
+								<img
+									src="https://img.icons8.com/cotton/128/000000/twitter.png"
+								/>
+							</a>
+						</div>
+						<div class="network">
+							<a
+								href="https://linkedin.com/in/rishabharidas"
+								target="_blank"
+							>
+								<img
+									src="https://img.icons8.com/doodle/48/000000/linkedin-circled.png"
+								/>
+							</a>
+						</div>
+						<div class="network">
+							<a
+								href="https://t.me/rishabharidas"
+								target="_blank"
+							>
+								<img
+									class="telegram"
+									src="https://img.icons8.com/plasticine/100/000000/telegram-app.png"
+							/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="openWindow">
+				<div
+					class="moreSection"
+					id="moreSection"
+					onmouseleave="changeAndExpand()"
+				>
+					<div class="section">
+						<a href="#about">
+							<img
+								src="img/code.png"
+								href="#about"
+						/></a>
+					</div>
+					<div class="section">
+						<a
+							href="https://www.buymeacoffee.com/rishabharidas"
+							target="_blank"
+							><img
+								src="img/bmc.png"
+								width="100%"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div
+				class="cube"
+				onclick="changeAndExpand()"
+				onmouseover=""
+			>
+				<div class="face front"></div>
+				<div class="face back"></div>
+				<div class="face right"></div>
+				<div class="face left"></div>
+				<div class="face top"></div>
+				<div class="face bottom"></div>
+			</div>
+		</div>
+	</body>
 </html>
