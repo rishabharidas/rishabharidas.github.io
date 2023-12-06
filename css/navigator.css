@@ -1,5 +1,25 @@
-.navigator {
+.drive-up-list {
   display: flex;
+  margin: auto;
+  height: 32px;
+  width: auto;
+  bottom: 12px;
+  position: sticky;
+  justify-content: space-evenly;
+}
+.drive-up-list > img {
+  -webkit-animation: breeze 2s infinite alternate ease-in-out;
+}
+@-webkit-keyframes breeze {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0.4em);
+  }
+}
+.navigator {
+  display: none;
   margin: auto;
   justify-content: space-evenly;
   position: sticky;
@@ -21,7 +41,7 @@
 
 @media (max-width: 850px) {
   .navigator {
-    display: flex;
+    display: none;
     margin: auto;
     position: sticky;
     bottom: 14px;

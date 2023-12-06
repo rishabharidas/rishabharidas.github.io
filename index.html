@@ -33,7 +33,10 @@
 		></script>
 	</head>
 	<body style="overflow: hidden">
-		<div class="page">
+		<div
+			class="page"
+			onclick="showNavigator(false)"
+		>
 			<span class="star">.</span>
 			<span class="star">.</span>
 			<span class="star">.</span>
@@ -124,15 +127,38 @@
 				</div>
 			</div>
 		</div>
-		<div class="navigator">
+		<div
+			class="drive-up-list"
+			id="drive-up-list"
+			ondrag="showNavigator()"
+			onclick="showNavigator()"
+		>
+			<img
+				src="img/list-up.png"
+				id="list-icon"
+			/>
+		</div>
+		<div
+			class="navigator"
+			id="navigator"
+		>
 			<span class="nav-icon">
-				<img src="img/dev.png" id="dwld-icon">
+				<img
+					src="img/dev.png"
+					id="devlop-icon"
+				/>
 			</span>
 			<span class="nav-icon">
-				<img src="img/download.png" id="dwld-icon">
+				<img
+					src="img/download.png"
+					id="dwld-icon"
+				/>
 			</span>
 			<span class="nav-icon">
-				<img src="img/bmc.png" id="bmc-icon">
+				<img
+					src="img/bmc.png"
+					id="bmc-icon"
+				/>
 			</span>
 		</div>
 	</body>
