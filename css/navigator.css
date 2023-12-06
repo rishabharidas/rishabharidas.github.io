@@ -3,8 +3,10 @@
   margin: auto;
   height: 32px;
   width: auto;
-  bottom: 12px;
-  position: sticky;
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   justify-content: space-evenly;
 }
 .drive-up-list > img {
