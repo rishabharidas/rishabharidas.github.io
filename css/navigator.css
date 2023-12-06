@@ -1,0 +1,33 @@
+.navigator {
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  position: sticky;
+  bottom: 14px;
+  background-color: rgba(184, 184, 184, 0.37);
+  width: 28rem;
+  height: 8vh;
+  border-radius: 15px;
+}
+.nav-icon {
+  display: contents;
+  justify-content: center;
+}
+.nav-icon > img {
+  width: auto;
+  height: auto;
+  margin: 10px;
+}
+
+@media (max-width: 850px) {
+  .navigator {
+    display: flex;
+    margin: auto;
+    position: sticky;
+    bottom: 14px;
+    background-color: rgba(184, 184, 184, 0.37);
+    max-width: 80%;
+    height: 7vh;
+    border-radius: 15px;
+  }
+}
