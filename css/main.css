@@ -22,7 +22,11 @@ body html {
     min-height: 100vh;
   }
 }
-.heading > h1 {
+.content-data {
+  position: absolute;
+  top: 36%;
+}
+.content-data > h1 {
   color: #ffffff;
   font-size: 40px;
   font-family: "Kalam", cursive;
@@ -44,7 +48,7 @@ body html {
     min-height: 100vh;
     align-items: center;
   }
-  .heading > h1 {
+  .content-data > h1 {
     font-size: 30px;
   }
   .subHeading h3 {
