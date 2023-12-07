@@ -2,24 +2,25 @@
 body html {
   margin: 0px;
   height: 100%;
+  width: fit-content;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 .page {
-  width: 100%;
+  width: fit-content;
   height: 100vh;
-  overflow: hidden;
   background-color: #0e101e;
-  overflow: hidden;
-  display: flex;
 }
-.content {
-  margin: 60px;
-  margin-top: 240px;
+@media (min-width: 600px) {
+  .content {
+    display: flex;
+    padding-left: 10%;
+    align-items: center;
+    min-height: 100vh;
+  }
 }
 .heading > h1 {
   color: #ffffff;
@@ -38,8 +39,10 @@ body html {
 }
 @media (max-width: 600px) {
   .content {
-    margin: auto;
-    margin-top: 260px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
   }
   .heading > h1 {
     font-size: 30px;

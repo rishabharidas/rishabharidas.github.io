@@ -3,7 +3,7 @@
   margin: auto;
   height: 32px;
   width: auto;
-  position: absolute;
+  position: fixed;
   top: 94%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -24,7 +24,7 @@
   display: none;
   margin: auto;
   justify-content: space-evenly;
-  position: absolute;
+  position: fixed;
   top: 94%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -42,12 +42,17 @@
   height: auto;
   margin: 10px;
 }
+.nav-icon > a > img {
+  width: auto;
+  height: auto;
+  margin: 10px;
+}
 
 @media (max-width: 850px) {
   .navigator {
     display: none;
     margin: auto;
-    position: absolute;
+    position: fixed;
     top: 94%;
     left: 50%;
     transform: translate(-50%, -50%);
