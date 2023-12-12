@@ -1,6 +1,23 @@
+.more-section {
+  background-color: #0e101e;
+  padding: 38px 0 38px 0;
+}
 .about-section {
   margin: auto;
   display: block;
   max-width: 75%;
   padding: 30px;
+  border-radius: 12px;
+  background-color: rgb(51 50 50 / 61%);
+  color: white;
+  font-family: monospace;
+}
+.about-section > .heading {
+  font-family: "Press Start 2P";
+  font-size: 27px;
+}
+
+.about-section > .more-info {
+  font-size: medium;
+  margin-top: 30px;
 }
