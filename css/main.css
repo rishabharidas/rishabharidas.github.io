@@ -10,10 +10,10 @@ body html {
   box-sizing: border-box;
 }
 .page {
-  width: fit-content;
-  height: 100vh;
-  background-color: #0e101e;
+  width: 100%;
+  height: 100%;
   box-shadow: #0e101e;
+  background-image: linear-gradient(0deg, #111827, #080a16);
 }
 @media (min-width: 600px) {
   .content {
@@ -81,7 +81,6 @@ body html {
   border-radius: 40px;
   margin-right: 5px;
   margin-left: 5px;
-  background-color: rgba(11, 19, 23, 0.73);
 }
 .network > a > img {
   width: 80%;

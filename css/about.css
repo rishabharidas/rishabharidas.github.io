@@ -1,5 +1,4 @@
 .more-section {
-  background-color: #0e101e;
   padding: 38px 0 38px 0;
 }
 .about-section {
@@ -26,4 +25,5 @@
 .about-section > .more-info {
   font-size: medium;
   margin-top: 30px;
+  line-height: 20px;
 }
