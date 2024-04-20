@@ -12,8 +12,8 @@
 }
 
 .side-nav {
-	width: 90px;
-	height: 90px;
+	width: 80px;
+	height: 80px;
 	border-radius: 100% 0 0 0;
 	background-color: #6168706e;
 	position: relative;
@@ -23,8 +23,8 @@
 }
 
 .side-nav-2 {
-	width: 90px;
-	height: 90px;
+	width: 80px;
+	height: 80px;
 	border-radius: 100% 0 0 0;
 	background-color: #6168706e;
 	position: absolute;
@@ -43,7 +43,7 @@
 .menu-item-1 {
 	display: none;
 	position: relative;
-	top: 66%;
+	top: 58%;
 	right: -16%;
 }
 @-webkit-keyframes breeze {
