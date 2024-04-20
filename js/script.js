@@ -1,22 +1,65 @@
-let moreMenuOpened = false;
+let navOpened = false;
+function isNavOpened() {
+	return navOpened;
+}
 
-function changeAndExpand() {
-	if (moreMenuOpened) {
-		document.getElementById('moreSection').style.height = '0';
+function showNavigator() {
+	var svgIcon = document.getElementById('svgIcon');
+	var sideNav2 = document.getElementById('sideNav');
+	var menuItem1 = document.getElementById('menuItem1');
+	const closeSvg =
+		'<path fill="#ffffff" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>';
+	const menuSvg =
+		'<path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />';
+	if (!navOpened) {
+		sideNav2.style.height = '160px';
+		sideNav2.style.width = '160px';
+		navOpened = true;
+		svgIcon.style.width = '45px';
+		svgIcon.style.right = '9%';
+		svgIcon.style.bottom = '6%';
+		menuItem1.style.display = 'flex';
 
-		moreMenuOpened = !moreMenuOpened;
+		svgIcon.innerHTML = closeSvg;
 	} else {
-		document.getElementById('moreSection').style.height = '160px';
-		moreMenuOpened = !moreMenuOpened;
+		sideNav2.style.height = '90px';
+		sideNav2.style.width = '90px';
+		svgIcon.style.width = '35px';
+		svgIcon.style.right = '18%';
+		svgIcon.style.bottom = '12%';
+		navOpened = false;
+		svgIcon.innerHTML = menuSvg;
+		menuItem1.style.display = 'none';
 	}
 }
 
-function showNavigator(value = true) {
-	if (value) {
-		document.getElementById('navigator').style.display = 'flex';
-		document.getElementById('drive-up-list').style.display = 'none';
-	} else {
-		document.getElementById('navigator').style.display = 'none';
-		document.getElementById('drive-up-list').style.display = 'flex';
-	}
+function downloadResume() {
+	var fileUrl = 'files/resume.pdf';
+
+	fetch(fileUrl)
+		.then((response) => response.blob())
+		.then((blob) => {
+			// Create a temporary URL for the Blob
+			var url = window.URL.createObjectURL(blob);
+
+			// Create a link element
+			var link = document.createElement('a');
+			link.href = url;
+
+			// Set the download attribute to specify the file name
+			link.download = 'resume.pdf';
+
+			// Append the link to the document body
+			document.body.appendChild(link);
+
+			// Trigger the download
+			link.click();
+
+			// Cleanup: remove the link and revoke the Blob URL
+			document.body.removeChild(link);
+			window.URL.revokeObjectURL(url);
+		})
+		.catch((error) => {
+			console.error('Error fetching the file:', error);
+		});
 }
