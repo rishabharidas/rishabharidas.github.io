@@ -39,23 +39,13 @@ function downloadResume() {
 	fetch(fileUrl)
 		.then((response) => response.blob())
 		.then((blob) => {
-			// Create a temporary URL for the Blob
-			var url = window.URL.createObjectURL(blob);
+			let url = window.URL.createObjectURL(blob);
 
-			// Create a link element
-			var link = document.createElement('a');
+			let link = document.createElement('a');
 			link.href = url;
-
-			// Set the download attribute to specify the file name
 			link.download = 'resume.pdf';
-
-			// Append the link to the document body
 			document.body.appendChild(link);
-
-			// Trigger the download
 			link.click();
-
-			// Cleanup: remove the link and revoke the Blob URL
 			document.body.removeChild(link);
 			window.URL.revokeObjectURL(url);
 		})

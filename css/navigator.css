@@ -18,8 +18,8 @@
 	background-color: #6168706e;
 	position: relative;
 	cursor: pointer;
-	border: 3px #ffffff;
 	transition: 0.3s ease; /* Add transition for smooth width change */
+	-webkit-tap-highlight-color: transparent;
 }
 
 .side-nav-2 {
@@ -31,6 +31,7 @@
 	cursor: pointer;
 	bottom: 0%;
 	right: 0%;
+	outline: none;
 }
 
 .side-nav-2 svg {
