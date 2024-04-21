@@ -32,6 +32,7 @@
 	bottom: 0%;
 	right: 0%;
 	outline: none;
+	box-shadow: -20px -8px 420px 3px rgb(196 178 253);
 }
 
 .side-nav-2 svg {
@@ -44,8 +45,15 @@
 	display: none;
 	position: relative;
 	top: 58%;
-	right: -16%;
+	right: -20%;
 }
+.menu-item-2 {
+	display: none;
+	position: relative;
+	top: -7%;
+	right: -55%;
+}
+
 @-webkit-keyframes breeze {
 	0% {
 		-webkit-transform: translateY(0);
