@@ -38,10 +38,10 @@ body html {
 .subHeading {
   color: rgb(144, 144, 133);
 }
-.subHeading > .contet-sub-heading > a {
+.subHeading > .content-sub-heading > a {
   color: rgb(144, 144, 133) !important;
 }
-.subHeading .contet-sub-heading {
+.subHeading .content-sub-heading {
   font-weight: bolder;
   font-family: "Press Start 2P", cursive;
   font-size: 14px;
