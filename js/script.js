@@ -37,7 +37,7 @@ function showNavigator(bgClose = false) {
 }
 
 function downloadResume() {
-	var fileUrl = 'files/resume.pdf';
+	var fileUrl = 'files/rishabharidas-resume.pdf';
 
 	fetch(fileUrl)
 		.then((response) => response.blob())
