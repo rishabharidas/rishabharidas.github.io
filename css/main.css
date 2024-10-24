@@ -77,6 +77,13 @@ body html {
   .social {
     margin-left: 0;
   }
+  .network > a > img {
+    width: 65%;
+  }
+  .telegram {
+    width: 75% !important;
+    margin-top: -5px;
+  }
 }
 .network {
   width: 25%;
@@ -91,6 +98,7 @@ body html {
   height: inherit;
   -webkit-animation: breeze 2s infinite alternate ease-in-out;
 }
+
 @-webkit-keyframes breeze {
   0% {
     -webkit-transform: translateY(0);
