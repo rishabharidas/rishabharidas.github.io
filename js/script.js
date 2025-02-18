@@ -37,7 +37,7 @@ function showNavigator(bgClose = false) {
 }
 
 function downloadResume() {
-	var fileUrl = 'files/rishabharidas-resume.pdf';
+	var fileUrl = 'files/rishabharidasrr.pdf';
 
 	fetch(fileUrl)
 		.then((response) => response.blob())
@@ -46,7 +46,7 @@ function downloadResume() {
 
 			let link = document.createElement('a');
 			link.href = url;
-			link.download = 'resume.pdf';
+			link.download = 'rishabharidas_resume.pdf';
 			document.body.appendChild(link);
 			link.click();
 			document.body.removeChild(link);
@@ -58,8 +58,6 @@ function downloadResume() {
 }
 
 setInterval(() => {
-	console.log('hereee-e-e-e-');
-
 	let comet = document.querySelector('#comet').classList;
 	let btnStatus = this;
 
