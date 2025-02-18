@@ -1,6 +1,7 @@
 .more-section {
   padding: 38px 0 38px 0;
 }
+
 .about-section {
   margin: auto;
   display: block;
@@ -11,6 +12,7 @@
   color: white;
   font-family: monospace;
 }
+
 .about-section > .heading {
   font-family: "Press Start 2P";
   font-size: 27px;
