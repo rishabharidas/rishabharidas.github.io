@@ -43,14 +43,14 @@
 .menu-item-1 {
 	display: none;
 	position: relative;
-	top: 58%;
-	right: -20%;
+	top: 57%;
+	right: -24%;
 }
 .menu-item-2 {
 	display: none;
 	position: relative;
-	top: -7%;
-	right: -55%;
+	top: 0%;
+    right: -60%;
 }
 
 @-webkit-keyframes breeze {
