@@ -148,7 +148,7 @@ body html {
     width: 65%;
   }
   .listening-music {
-    right: 3%;
+    right: 3% !important;
   }
 }
 

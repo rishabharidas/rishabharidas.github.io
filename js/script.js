@@ -5,32 +5,6 @@ function isNavOpened() {
 }
 const songPlayingElmt = document.getElementById("listening-music");
 
-
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js')
-  .then(reg => console.log('Service Worker registered with scope:', reg.scope))
-  .catch(err => console.error('Service Worker registration failed:', err));
-}
-
-navigator.serviceWorker.addEventListener('message', event => {
-  const trackList = event.data;
-  console.log(trackList, "<<<<<<<<< -------- tracklist")
-
-  if (trackList[0]["@attr"]?.nowplaying) {
-    songPlayingElmt.style.display = "block";
-    isPlaying = true;
-  } else {
-    songPlayingElmt.style.display = "none";
-      isPlaying = false;
-  }
-
-  trackList.forEach(track => {
-    const li = document.createElement('li');
-    li.textContent = `${track.artist['#text']} – ${track.name}`;
-    list.appendChild(li);
-  });
-});
-
 function showNavigator(bgClose = false) {
   var svgIcon = document.getElementById("svgIcon");
   var sideNav2 = document.getElementById("sideNav");
