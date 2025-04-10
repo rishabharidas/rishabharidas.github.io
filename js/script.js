@@ -14,14 +14,15 @@ if ('serviceWorker' in navigator) {
 
 navigator.serviceWorker.addEventListener('message', event => {
   const trackList = event.data;
+  console.log(trackList, "<<<<<<<<< -------- tracklist")
 
   if (trackList[0]["@attr"]?.nowplaying) {
     songPlayingElmt.style.display = "block";
     isPlaying = true;
-} else {
-  songPlayingElmt.style.display = "none";
-    isPlaying = false;
-}
+  } else {
+    songPlayingElmt.style.display = "none";
+      isPlaying = false;
+  }
 
   trackList.forEach(track => {
     const li = document.createElement('li');
