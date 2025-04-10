@@ -147,6 +147,9 @@ body html {
   .network > a > img {
     width: 65%;
   }
+  .listening-music {
+    right: 3%;
+  }
 }
 
 .network {

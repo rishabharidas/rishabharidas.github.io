@@ -3,6 +3,12 @@ function isNavOpened() {
   return navOpened;
 }
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js')
+    .then(reg => console.log('Service Worker registered'))
+    .catch(err => console.error('Service Worker registration failed:', err));
+}
+
 function showNavigator(bgClose = false) {
   var svgIcon = document.getElementById("svgIcon");
   var sideNav2 = document.getElementById("sideNav");
