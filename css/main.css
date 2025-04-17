@@ -147,9 +147,6 @@ body html {
     .network > a > img {
         width: 65%;
     }
-    .playing-widget {
-        right: 3% !important;
-    }
 }
 
 .network {
@@ -206,8 +203,8 @@ body html {
 
 .playing-widget {
     position: absolute;
-    top: 1%;
-    right: 1%;
+    top: 10px;
+    right: 8px;
     border: none;
     width: 351px;
     overflow: hidden;
