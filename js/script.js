@@ -3,7 +3,14 @@ let isPlaying = false;
 function isNavOpened() {
   return navOpened;
 }
-const songPlayingElmt = document.getElementById("listening-music");
+
+document.addEventListener("DOMContentLoaded", function () {
+  const iframe = document.getElementById("playingWidget");
+
+  document.addEventListener("click", function () {
+    iframe.contentWindow.postMessage({ type: "close-iframe-widget" }, "*");
+  });
+});
 
 function showNavigator(bgClose = false) {
   var svgIcon = document.getElementById("svgIcon");
