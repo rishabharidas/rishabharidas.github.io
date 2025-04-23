@@ -6,6 +6,24 @@
     box-sizing: border-box;
 }
 
+:root {
+    --background: linear-gradient(0deg, rgb(248 248 248), rgb(184 232 250));
+    --foreground: #000000;
+    --card-bg: rgb(236 236 236 / 82%);
+    --reverted-color: #ededed;
+    color: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: linear-gradient(0deg, #111827, #080a16);
+        --foreground: #ededed;
+        --reverted-color: #000000;
+        --card-bg: rgb(51 50 50 / 61%);
+        color: var(--foreground);
+    }
+}
+
 body html {
     height: 100%;
     width: fit-content;
@@ -19,7 +37,8 @@ body html {
     width: 100%;
     height: 100%;
     box-shadow: #0e101e;
-    background-image: linear-gradient(0deg, #111827, #080a16);
+    background-image: var(--background);
+    color: var(--foreground);
 }
 
 @media (min-width: 600px) {
@@ -36,26 +55,27 @@ body html {
     top: 36%;
     display: flex;
     flex-direction: column;
+    gap: 6px;
     align-items: flex-start;
 }
 
 .content-data > .heading {
-    color: #ffffff;
+    color: var(--foreground);
     font-size: 40px;
     font-family: "Kalam", cursive;
     display: flex;
     width: 100%;
 
     a {
-        color: #ffffff;
+        color: var(--foreground);
         text-decoration: none;
     }
 }
 
 .my-name {
     padding: 4px 12px;
-    background-color: #2b2d42;
-    color: white;
+    background-color: var(--card-bg);
+    color: var(--foreground);
     font-size: 24px;
     border-radius: 11px;
     white-space: nowrap;
@@ -63,8 +83,9 @@ body html {
 }
 
 .short-name {
-    color: #84c1b1;
+    color: #31898d;
     margin-top: -2px;
+    font-size: 32px;
 }
 
 .heading-splitter {
@@ -133,7 +154,6 @@ body html {
     display: flex;
     width: 100%;
     justify-content: start;
-    margin-top: 15px;
     border-radius: 10px;
     margin-left: -10px;
 }
@@ -186,7 +206,7 @@ body html {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #000000;
+    color: var(--reverted-color);
     padding: 4px 6px;
     background-color: #31898d;
     border-radius: 6px;

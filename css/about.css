@@ -8,8 +8,8 @@
   max-width: 75%;
   padding: 30px;
   border-radius: 12px;
-  background-color: rgb(51 50 50 / 61%);
-  color: white;
+  background-color: var(--card-bg);
+  color: var(--foreground);
   font-family: monospace;
 }
 

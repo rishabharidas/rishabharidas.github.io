@@ -1,63 +1,74 @@
-.drive-up-list {
-  display: flex;
-  margin: auto;
-  width: auto;
-  position: fixed;
-  bottom: 0%;
-  right: 0%;
-  justify-content: space-evenly;
+:root {
+    --nav-bg: #d6d6d685;
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --nav-bg: #6168706e;
+    }
+}
+
+.drive-up-list {
+    display: flex;
+    margin: auto;
+    width: auto;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    justify-content: space-evenly;
+}
+
 .drive-up-list > img {
-  -webkit-animation: breeze 2s infinite alternate ease-in-out;
+    -webkit-animation: breeze 2s infinite alternate ease-in-out;
 }
 
 .side-nav {
-  width: 90px;
-  height: 90px;
-  border-radius: 100% 0 0 0;
-  background-color: #6168706e;
-  position: relative;
-  cursor: pointer;
-  transition: 0.3s ease; /* Add transition for smooth width change */
-  -webkit-tap-highlight-color: transparent;
+    width: 90px;
+    height: 90px;
+    border-radius: 100% 0 0 0;
+    background-color: var(--nav-bg);
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease; /* Add transition for smooth width change */
+    -webkit-tap-highlight-color: transparent;
 }
 
 .side-nav-2 {
-  width: 80px;
-  height: 80px;
-  border-radius: 100% 0 0 0;
-  background-color: #6168706e;
-  position: absolute;
-  cursor: pointer;
-  bottom: 0%;
-  right: 0%;
-  outline: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 100% 0 0 0;
+    background-color: var(--nav-bg);
+    position: absolute;
+    cursor: pointer;
+    bottom: 0%;
+    right: 0%;
+    outline: none;
 }
 
 .side-nav-2 svg {
-  position: absolute;
-  bottom: 12%;
-  right: 18%;
+    position: absolute;
+    bottom: 12%;
+    right: 18%;
 }
 
 .menu-item-1 {
-  display: none;
-  position: relative;
-  top: 57%;
-  right: -14%;
+    display: none;
+    position: relative;
+    top: 57%;
+    right: -14%;
 }
 .menu-item-2 {
-  display: none;
-  position: relative;
-  top: -12%;
-  right: -61%;
+    display: none;
+    position: relative;
+    top: -12%;
+    right: -61%;
 }
 
 @-webkit-keyframes breeze {
-  0% {
-    -webkit-transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(0.4em);
-  }
+    0% {
+        -webkit-transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(0.4em);
+    }
 }
