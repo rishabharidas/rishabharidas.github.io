@@ -128,8 +128,8 @@
     display: flex;
     height: 200px;
     position: absolute;
-    top: 0%;
-    left: 4%;
+    top: -3%;
+    left: 5%;
     transform: rotate(8deg);
 }
 
@@ -148,23 +148,24 @@
         .top-shade {
             margin: auto;
             height: 10px;
-            width: 23px;
+            width: 24px;
             border-radius: 16px 16px 0px 0px;
             background-color: rgb(146, 146, 146);
         }
     }
     .shuttle-middle {
         margin: auto;
+        margin-top: -1px;
         height: 15px;
-        width: 75px;
-        border-radius: 45%;
-        background-color: white;
+        width: 76px;
+        border-radius: 69%;
+        background-color: dimgray;
         display: flex;
         .middle-lights {
             height: 13px;
-            width: 75px;
+            width: 86px;
             margin: auto;
-            border-radius: 25% 25% 50% 50%;
+            border-radius: 69%;
             background-color: rgb(2, 37, 131);
             display: flex;
             .light {
@@ -175,7 +176,7 @@
                 border-radius: 50%;
             }
             .light:nth-child(1) {
-                margin-top: 2px;
+                margin-top: 3px;
             }
             .light:nth-child(2) {
                 margin-top: 5px;
@@ -184,24 +185,25 @@
                 margin-top: 5px;
             }
             .light:nth-child(4) {
-                margin-top: 2px;
+                margin-top: 3px;
             }
         }
     }
     .hands {
         display: flex;
+        margin-top: -2px;
         justify-content: center;
         .left-hand {
             margin-right: 15px;
             width: 2px;
-            height: 7px;
+            height: 8px;
             transform: translateY(0) rotate(45deg);
             background-color: var(--foreground);
         }
         .right-hand {
             margin-left: 15px;
             width: 2px;
-            height: 7px;
+            height: 8px;
             transform: translateY(0) rotate(-45deg);
             background-color: var(--foreground);
         }
