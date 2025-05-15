@@ -116,7 +116,11 @@
     .element-shuttle {
         display: flex;
         height: 200px;
-        /* width: 100% !important; */
+    }
+    .shuttle {
+        .shuttle-top {
+            background-color: white;
+        }
     }
 }
 
@@ -137,15 +141,15 @@
     .shuttle-top {
         height: 14px;
         width: 30px;
-        border-radius: 16px 18px 0px 0px;
-        background-color: white;
+        border-radius: 16px 16px 0px 0px;
+        background-color: dimgray;
         margin: auto;
         display: flex;
         .top-shade {
             margin: auto;
-            height: 13px;
-            width: 24px;
-            border-radius: 16px 18px 0px 0px;
+            height: 10px;
+            width: 23px;
+            border-radius: 16px 16px 0px 0px;
             background-color: rgb(146, 146, 146);
         }
     }
@@ -192,14 +196,14 @@
             width: 2px;
             height: 7px;
             transform: translateY(0) rotate(45deg);
-            background-color: white;
+            background-color: var(--foreground);
         }
         .right-hand {
             margin-left: 15px;
             width: 2px;
             height: 7px;
             transform: translateY(0) rotate(-45deg);
-            background-color: white;
+            background-color: var(--foreground);
         }
     }
 }
