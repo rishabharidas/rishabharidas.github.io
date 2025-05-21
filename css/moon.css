@@ -114,8 +114,9 @@
 
 @media (prefers-color-scheme: dark) {
     .element-shuttle {
-        display: flex;
+        display: flex !important;
         height: 200px;
+        width: 100% !important;
     }
     .shuttle {
         .shuttle-top {
@@ -125,12 +126,11 @@
 }
 
 .element-shuttle {
-    display: flex;
-    height: 200px;
-    position: absolute;
+    display: none;
+    /* position: absolute;
     top: -3%;
     left: 5%;
-    transform: rotate(8deg);
+    transform: rotate(8deg); */
 }
 
 
