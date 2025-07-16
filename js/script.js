@@ -46,7 +46,7 @@ function showNavigator(bgClose = false) {
 }
 
 function downloadResume() {
-  var fileUrl = "files/rishabharidasrr.pdf";
+  var fileUrl = "files/rishabharidas-resume-july2025.pdf";
 
   fetch(fileUrl)
     .then((response) => response.blob())
