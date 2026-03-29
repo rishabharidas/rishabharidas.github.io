@@ -46,7 +46,7 @@ function showNavigator(bgClose = false) {
 }
 
 function downloadResume() {
-  var fileUrl = "files/rishab-p-haridas_20260301_0219.pdf";
+  var fileUrl = "files/rishabharidas_resume.pdf";
 
   fetch(fileUrl)
     .then((response) => response.blob())
