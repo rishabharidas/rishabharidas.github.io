@@ -46,7 +46,7 @@ function showNavigator(bgClose = false) {
 }
 
 function downloadResume() {
-  var fileUrl = "files/rishabharidas_resume.pdf";
+  var fileUrl = "files/Rishab_P_Haridas_Frontend_Developer_Resume1.pdf";
 
   fetch(fileUrl)
     .then((response) => response.blob())
